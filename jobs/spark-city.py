@@ -125,6 +125,7 @@ def main():
 
     query5.awaitTermination()
 
+
 # Calling the function
 
 if __name__ == "__main__":
