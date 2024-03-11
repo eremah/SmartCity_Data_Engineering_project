@@ -75,8 +75,8 @@ services:
       - ./jobs:/opt/bitnami/spark/jobs
     command: bin/spark-class org.apache.spark.deploy.master.Master #Command that classes the master and worker nodes. Replicated across master and worker nodes
     ports:
-      - "9090:8080"
-      - "7077:7077" #Where spark UI will be sitting on.
+      - "9090:8080" # Contains the UI ie see and observe running jobs
+      - "7077:7077" #Where spark master Url will be sitting on. Where spark jobs are submitted into.
     networks:
       - datamasterylab
   spark_worker1:
